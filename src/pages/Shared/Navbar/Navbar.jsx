@@ -58,17 +58,17 @@ const Navbar = () => {
               />
             </svg>
           </button>
+          <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul className="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg text-white font-semibold md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 uppercase">
+              {navOptions}
+            </ul>
+          </div>
           <button
             onClick={changeTheme}
             className="btn btn-primary btn-sm rounded-sm"
           >
             {mode === "light" ? "dark" : "light"}
           </button>
-          <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-            <ul className="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg text-white font-semibold md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 uppercase">
-              {navOptions}
-            </ul>
-          </div>
         </div>
       </nav>
     </>

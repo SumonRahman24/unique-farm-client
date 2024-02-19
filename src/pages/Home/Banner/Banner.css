@@ -1,0 +1,12 @@
+.thumbs {
+  text-align: center;
+  z-index: 10;
+}
+
+.carousel-root {
+  height: 500px; /* Adjust the height as needed */
+}
+
+.carousel {
+  height: 100%;
+}
